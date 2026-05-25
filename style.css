@@ -1,0 +1,61 @@
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+  background-color: #809076;
+  color: #105666;
+}
+
+.top-nav-bar a {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  background: #284139;
+}
+.top-nav-bar a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+.top-nav-bar a:hover {
+  background: #886830;
+}
+
+header {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+  background-color: #105666;
+  color: #f7f4d5;
+}
+
+#animal-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+section {
+  background-color: #f7f4d5;
+}
+
+li {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 25px;
+  color: #105666;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30px;
+  color: #105666;
+}
