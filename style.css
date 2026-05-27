@@ -5,6 +5,7 @@ body {
   font-size: 20px;
   background-color: #809076;
   color: #105666;
+  margin: 0px 30px 10px;
 }
 
 .active {
@@ -73,10 +74,54 @@ header h1 {
   border-radius: 20px;
 }
 
-#animal-images {
+.animal-content p {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  align-items: center;
+  padding: 20px;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.bear-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.h1-grizzly {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.caribou-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.cougar-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.bumblebee-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 15px;
 }
 
 section {
