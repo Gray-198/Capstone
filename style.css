@@ -7,22 +7,49 @@ body {
   color: #105666;
 }
 
-.top-nav-bar a {
+.active {
+  background-color: #3eb94982;
+  color: white;
+  border-radius: 10px;
+}
+
+.top-nav-bar {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
-  list-style: none;
+  justify-content: space-around;
   margin: 0;
   background: #284139;
 }
 .top-nav-bar a {
   text-decoration: none;
-  display: block;
-  padding: 1em;
+  display: inline-block;
+  padding: 20px 80px 20px;
   color: white;
+  font-size: 25px;
 }
 .top-nav-bar a:hover {
   background: #886830;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+}
+
+ul li a {
+  display: inline-block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: green;
 }
 
 p {
@@ -35,9 +62,15 @@ header h1 {
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 50px;
+  margin: 0 auto;
+  padding: 10px 0;
   background-color: #105666;
+  max-width: 800px;
   color: #f7f4d5;
   text-align: center;
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 20px;
 }
 
 #animal-images {
