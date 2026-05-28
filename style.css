@@ -1,11 +1,11 @@
 body {
   font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
   font-size: 20px;
   background-color: #809076;
   color: #105666;
-  margin: 0px 30px 10px;
+  margin: 0px;
+  overflow-x: hidden;
 }
 
 .active {
@@ -15,28 +15,28 @@ body {
 }
 
 .top-nav-bar {
-  width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  flex-flow: wrap;
+  gap: 20px;
+  justify-content: center;
   margin: 0;
   background: #284139;
 }
 .top-nav-bar a {
   text-decoration: none;
-  display: inline-block;
+  display: block;
   padding: 20px 80px 20px;
   color: white;
   font-size: 25px;
 }
 .top-nav-bar a:hover {
   background: #886830;
+  border-radius: 10px;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
   background-color: salmon;
   display: flex;
   justify-content: center;
@@ -51,77 +51,160 @@ ul li a {
 
 ul li a:hover {
   background-color: green;
+  border-radius: 10px;
 }
 
-p {
+.main-title-h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  max-width: 500px;
+  width: 90%;
+  height: 2%; /* This is an example, remove later*/
+  margin: 15px auto;
+  padding: 10px;
+  background-color: #105666;
+  color: #f7f4d5;
+  text-align: center;
+  border: 10px solid;
+  border-radius: 20px;
+}
+
+.intro {
+  margin-bottom: 0px;
+  margin-top: 60px;
+  padding: 10px;
+  color: #284139;
+  background-color: #52cca6;
+  text-align: center;
+}
+
+.about-myself {
+  margin: 15px auto;
+  padding: 10px;
+  color: #284139;
+  background-color: #105666;
+  color: #f7f4d5;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.bear-text {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.bear-text p {
+  max-width: 700px;
+  line-height: 1.6;
   float: right;
   width: 50%;
 }
 
-header h1 {
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 50px;
-  margin: 0 auto;
-  padding: 10px 0;
-  background-color: #105666;
-  max-width: 800px;
-  color: #f7f4d5;
-  text-align: center;
-  border-style: solid;
-  border-width: 10px;
-  border-radius: 20px;
+.bear-container {
+  padding: 20px;
+  margin-bottom: 0px;
+  border-radius: 10px;
 }
 
-.animal-content p {
+.h2-grizzly {
+  margin: 0 0 10px 40px;
+  position: relative;
+  bottom: -20px;
+  left: 85px;
+}
+
+.caribou-text {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  gap: 40px;
   align-items: center;
-  padding: 20px;
+  margin-top: 0px;
+}
+
+.caribou-text p {
   max-width: 700px;
   line-height: 1.6;
-}
-
-.bear-container {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 30px;
-  padding: 20px;
-  border-radius: 15px;
-}
-
-.h1-grizzly {
-  margin-top: 20px;
-  margin-left: 20px;
-  display: flex;
-  justify-content: left;
-  align-items: left;
+  float: right;
+  width: 50%;
 }
 
 .caribou-container {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 30px;
   padding: 20px;
-  border-radius: 15px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+}
+
+.h3-caribou {
+  margin: 0 0 10px 40px;
+  position: relative;
+  bottom: -10px;
+  left: 120px;
+}
+
+.cougar-text {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.cougar-text p {
+  max-width: 700px;
+  line-height: 1.6;
+  float: right;
+  width: 50%;
 }
 
 .cougar-container {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 30px;
   padding: 20px;
-  border-radius: 15px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+}
+
+.h4-cougar {
+  margin: 0 0 10px 40px;
+  position: relative;
+  bottom: -5px;
+  left: 130px;
+}
+
+.bumblebee-text {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.bumblebee-text p {
+  max-width: 700px;
+  line-height: 1.6;
+  float: right;
+  width: 50%;
 }
 
 .bumblebee-container {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 30px;
   padding: 20px;
-  border-radius: 15px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+}
+
+.h5-bumblebee {
+  margin: 0 0 10px 40px;
+  position: relative;
+  bottom: -10px;
+  left: 90px;
 }
 
 section {
@@ -142,20 +225,4 @@ p {
   font-style: normal;
   font-size: 30px;
   color: #105666;
-}
-
-.test-text {
-  font-family: "Nunito", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  width: auto;
-  font-style: bold;
-  text-align: center;
-  line-height: 1.5;
-  color: rgb(28, 46, 34);
-  text-decoration: underline;
-}
-
-.test-text:hover {
-  background: red;
 }
