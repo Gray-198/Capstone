@@ -12,6 +12,9 @@ body {
   color: #105666;
   margin: 0px;
   overflow-x: hidden;
+  min-height: 100vh;
+  border-left: 10px solid #284139;
+  border-right: 10px solid #284139;
 }
 
 .active {
