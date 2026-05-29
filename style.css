@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -12,6 +18,19 @@ body {
   background-color: #3eb94982;
   color: white;
   border-radius: 10px;
+}
+
+.Kirby {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Kirby img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: auto;
 }
 
 .top-nav-bar {
@@ -78,6 +97,10 @@ body {
   border-color: rgb(55, 164, 169);
 }
 
+.Kirby {
+  margin: 0 auto;
+}
+
 .welcome-banner {
   width: 100%;
   padding: 20px 0;
@@ -98,8 +121,8 @@ body {
 }
 
 .about-myself {
-  margin: 15px auto;
-  padding: 10px;
+  margin: 0 auto;
+  padding: 10px 0;
   text-align: center;
   color: #284139;
   background-color: #105666;
@@ -123,6 +146,65 @@ body {
 .about-content p {
   line-height: 1.5;
   font-size: 1.9rem;
+}
+
+.pets-banner {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #58d1b0;
+}
+
+.pets-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: #284139;
+  background-color: #58d1b0;
+}
+
+.pets-intro p {
+  line-height: 1.5;
+  font-size: 1.9rem;
+}
+
+.ollie-video-row {
+  flex-wrap: nowrap;
+}
+
+.ollie-content {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.lucile-video-row {
+  flex-wrap: nowrap;
+}
+
+.lucile-content {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.soap-image-row {
+  flex-wrap: nowrap;
+}
+
+.soap-content {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.charlie-image-row {
+  flex-wrap: nowrap;
+}
+
+.charlie-content {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
 }
 
 h2,
@@ -280,27 +362,54 @@ p {
   margin: 40px auto;
   padding: 20px;
 }
+.gray-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+.gray-facts {
+  max-width: 500px;
+}
 
 .gray-layout img {
   border-radius: 12px;
 }
 
-.nav-interests-pets {
-  list-style-type: none;
-  margin: 0;
-  background-color: rgb(81, 178, 69);
+.my-interests {
+  background: rgb(81, 178, 69);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gray-list {
+  background-color: #809076;
+  padding: 20px;
+}
+
+.bottom-bar {
   display: flex;
+  flex-flow: wrap;
+  gap: 20px;
   justify-content: center;
+  margin: 0;
+  background: #284139;
 }
 
-.nav-interests-pets a {
-  display: inline-block;
-  color: white;
-  padding: 14px 16px;
+.bottom-bar a {
   text-decoration: none;
+  display: block;
+  padding: 20px 80px 20px;
+  color: white;
+  font-size: 25px;
 }
 
-.nav-interests-pets a:hover {
-  background-color: green;
+.bottom-bar a:hover {
+  background: rgb(81, 178, 69);
+  border-radius: 10px;
+}
+
+.bottom-paragraph {
+  text-align: center;
+  background-color: #58d1b0;
   border-radius: 10px;
 }
